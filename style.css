@@ -47,7 +47,7 @@
     font-size: 4rem;
     font-weight: 500;
     opacity: 0;
-    animation: logoAnimation 1s 0.7s forwards, changeColor .4s 1s linear infinite;
+    animation: logoAnimation 1s 0.7s forwards, changeColor .4s 1.2s linear infinite;
 }
 
 @keyframes logoAnimation{
@@ -140,7 +140,6 @@ header .btn{
      height: 100vh;
      min-height: 350px;
      position: relative;
-     background-color: blue;
      background: linear-gradient(#ff00c890, rgba(156, 0, 86, 0.9)), url(images/bg.jpeg);
      background-size: cover;
      background-attachment: fixed;
@@ -155,7 +154,7 @@ header .btn{
      /* background-color: red; */
      width: 90%;
      height: 90%;
-     margin-top: 5rem;
+     margin-top: 2rem;
      display: flex;
      justify-content: center;
  }
@@ -200,7 +199,7 @@ header .btn{
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    top: 19rem;
+    top: 18rem;
     opacity: 0;
     animation: moveBanner 1s 2s forwards;
  }
@@ -226,8 +225,68 @@ header .btn{
 
  .container-cards{
      /* border: 1px solid black; */
-     width: 80%;
+     width: 100%;
      height: 20rem;
      position: absolute;
      top: 25rem;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .card-info{
+     /* border: 1px solid yellow; */
+     position: relative;
+     width: 1000%;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
+
+ .card{
+    width: 18rem;
+    height: 20rem;
+    background-color: #ffffff99;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 1s;
+    box-shadow: .1rem .1rem .4rem rgba(70, 1, 33, 0.3); 
+ }
+
+ .card-icon{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-left: 2rem;
+    
+}
+
+ .card h2{
+     /* background-color: violet; */
+     font-family: var(--font-default);
+     font-weight: 600;
+     padding-left: 2rem;
+     color: #00538a;
+ }
+
+
+ .card p{
+     /* background-color: yellow; */
+     font-family: var(--font-secundary);
+     line-height: 1.6rem;
+     font-size: .9rem;
+     text-align: justify;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .card:hover{
+     transform: scale(1.08);
+     background-color: #ffffffd8;
+ }
+
+ .card:hover h2{
+     color: #0792ee;
  }
